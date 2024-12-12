@@ -1,3 +1,19 @@
+const availableBal = () => {
+    let totalCr = 0;
+    let totalDr = 0;
+    for (let i = 0; i < transactions.length; i++) {
+        if (transactions[i].status == 'cr') {
+            totalCr += parseFloat(transactions[i].amount);
+        } else {
+            totalDr += parseFloat(transactions[i].amount);
+        }
+    }
+    const bal = (Math.round((totalCr - totalDr) * 100)) / 100;
+    return bal;
+}
+const balance = document.querySelector('.balance');
+balance.innerText = `₹ ${availableBal()}`;
+
 const
     body = document.querySelector("body"),
     sidebar = body.querySelector(".sidebar"),
@@ -35,7 +51,7 @@ document.addEventListener('click', (event) => {
 
 
 // pulse light for side bar in mobile view to animate
-const
+const 
     colorPickers = document.querySelectorAll('.mSideBarLinkIconBox'),
     mSideBtn = document.querySelectorAll(".mSideBarLink"),
     pulseLight = document.getElementById("pulseLight")
@@ -84,7 +100,7 @@ mBotBtn.forEach((btn) => {
 });
 
 // adding a class activeNavLinkA at side bar button in desktop view 
-const
+const 
     navLinkA = document.querySelectorAll(".navLinkA"),
     navText = document.querySelectorAll(".nav-text"),
     topCurrentPage = document.getElementById("topCurrentPage")
@@ -96,5 +112,20 @@ navLinkA.forEach((btn, index) => {
         });
         btn.classList.add("activeNavLinkA");
         topCurrentPage.innerText = `${navText[index].innerText}`;
+    });
+});
+
+// redirecting to finance page with 4 btn in the middle 
+const middleFourBtn = document.querySelectorAll(".subNavBtn");
+middleFourBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        middleFourBtn.forEach((element) => {
+            element.style.backgroundColor = 'white';
+            element.style.color = '#547218';
+        });
+        btn.style.backgroundColor = '#00776F';
+        btn.style.color = 'white';
+        const value = btn.getAttribute('value');
+        window.location.href=`shortcuts.html?value=${value}`;
     });
 });
