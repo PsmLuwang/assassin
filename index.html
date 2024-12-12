@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark-Light</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <!-- side bar for desktop view -->
+    <nav class="sidebar">
+        <div class="sidebarHeader">
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJX2IE7HIryBkCZ-G4mRQLAHPujlPonC6ipOswUnpoL5kBwxtW2v9j7_tj8z9nhwO85O8&usqp=CAU"
+                        alt="">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">MLBB</span>
+                    <span class="profession">Assassin's Store</span>
+                </div>
+            </div>
+
+            <i class="fa-solid fa-chevron-right toggle"></i>
+        </div>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#" class="navLinkA activeNavLinkA">
+                            <i class="fa-solid fa-house icon"></i>
+                            <span class="text nav-text">
+                                Dashboard
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="navLinkA">
+                            <i class="fa-solid fa-chart-simple icon"></i>
+                            <span class="text nav-text">
+                                Revenue
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="navLinkA">
+                            <i class="fa-solid fa-bell icon"></i>
+                            <span class="text nav-text">
+                                Notifications
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="navLinkA">
+                            <i class="fa-solid fa-chart-pie icon"></i>
+                            <span class="text nav-text">
+                                Analytics
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="navLinkA">
+                            <i class="fa-solid fa-heart icon"></i>
+                            <span class="text nav-text">
+                                Likes
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="navLinkA">
+                            <i class="fa-solid fa-wallet icon"></i>
+                            <span class="text nav-text">
+                                Wallets
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#" class="navLinkA">
+                        <i class="fa-solid fa-user icon"></i>
+                        <span class="text nav-text">
+                            Profile
+                        </span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#" class="navLinkA">
+                        <i class="fa-solid fa-person-walking-dashed-line-arrow-right icon mirror"></i>
+                        <span class="text nav-text">
+                            Log out
+                        </span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="fa-solid fa-moon icon moon"></i>
+                        <i class="fa-solid fa-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- side bar for mobile view -->
+    <nav class="mSideBar" id="mSideBar">
+        <section>
+            <div class="mSideBarHeader">
+                <i class="fa-solid fa-circle-user"></i>
+                <span>Mr. John Anderson</span>
+                <div>
+                    <span>Edit</span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+            </div>
+    
+            <div class="mSideBarLinkParent">
+                <span class="pulseLight" id="pulseLight"></span>
+                <div class="mSideBarLink" onclick="">
+                    <span class="mSideBarLinkIconBox homeColor">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                    <span class="mSideBarLinkText">Home</span>
+                </div>
+    
+                <div class="mSideBarLink">
+                    <span class="mSideBarLinkIconBox historyColor">
+                        <i class="fa-solid fa-wallet"></i>
+                    </span>
+                    <span class="mSideBarLinkText">Purchased History</span>
+                </div>
+    
+                <div class="mSideBarLink">
+                    <span class="mSideBarLinkIconBox notificationColor">
+                        <i class="fa-solid fa-bell"></i>
+                    </span>
+                    <span class="mSideBarLinkText">Notification</span>
+                </div>
+    
+                <div class="mSideBarLink">
+                    <span class="mSideBarLinkIconBox supportColor">
+                        <i class="fa-solid fa-headset"></i>
+                    </span>
+                    <span class="mSideBarLinkText">Support</span>
+                </div>
+    
+                <div class="mSideBarLink">
+                    <span class="mSideBarLinkIconBox privacyColor">
+                        <i class="fa-solid fa-file-shield"></i>
+                    </span>
+                    <span class="mSideBarLinkText">Privacy & Policy</span>
+                </div>
+    
+                <div class="mSideBarLink">
+                    <span class="mSideBarLinkIconBox termsColor">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </span>
+                    <span class="mSideBarLinkText">Terms & Conditions</span>
+                </div>
+                <div class="mSideBarLink">
+                    <span class="mSideBarLinkIconBox refundColor">
+                        <i class="fa-solid fa-file-circle-check"></i>
+                    </span>
+                    <span class="mSideBarLinkText">Refund Policy</span>
+                </div>
+            </div>
+    
+            <div class="mMode">
+                <div class="m-moon-sun">
+                    <i class="fa-solid fa-moon icon mMoon"></i>
+                    <i class="fa-solid fa-sun icon mSun"></i>
+                </div>
+                <span class="m-mode-text">Dark Mode</span>
+    
+                <div class="m-toggle-switch">
+                    <span class="m-switch"></span>
+                </div>
+            </div>
+        </section>
+        
+
+        <div class="mLogout">
+            <span>Log out</span>
+            <i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i>
+        </div>
+    </nav>
+
+    <!-- main body with the header -->
+    <section class="home">
+        <header>
+            <div class="text" id="topCurrentPage">Dashboard</div>
+            <div class="logoParent">
+                <i class="fa-solid fa-bars sideNavBtn" id="sideNavBtn"></i>
+                <div class="mLogoBox">
+                    <span class="mLogo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJX2IE7HIryBkCZ-G4mRQLAHPujlPonC6ipOswUnpoL5kBwxtW2v9j7_tj8z9nhwO85O8&usqp=CAU"
+                            alt="">
+                    </span>
+
+                    <div class="mText">
+                        <span class="mName">MLBB</span>
+                        <span class="mStore">Assassin's Store</span>
+                    </div>
+                </div>
+            </div>
+            <div class="topProfile">
+                <div>
+                    <p class="balance">₹ 999.99</p>
+                    <p>Mr. John Anderson</p>
+                </div>
+                <a href="#" class="topProfileBtn">
+                    <i class="fa-solid fa-circle-user"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <div class="content">
+            <section class="banner">
+                <div class="bg1"></div>
+                <div class="bg2"></div>
+                <div class="bg3"></div>
+                <div class="imageSlider">
+                    <img src="https://admin.esports.gg/wp-content/uploads/2023/02/mlbb-jujutsu-kaisen.jpg" alt="">
+                    <!-- <img src="../img/jjk1.jpg" alt=""> -->
+                </div>
+            </section>
+
+            <!-- four buttons in the middle -->
+            <nav class="subNav">
+                <div>
+                    <div>
+                        <button>
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </button>
+                        <p>Top-up</p>
+                    </div>
+                    <div>
+                        <button>
+                            <i class="fa-regular fa-file-lines"></i>
+                        </button>
+                        <p>Transaction</p>
+                    </div>
+                    <div>
+                        <button>
+                            <i class="fa-solid fa-wallet"></i>
+                        </button>
+                        <p>Purchases</p>
+                    </div>
+                    <div>
+                        <button>
+                            <i class="fa-solid fa-trophy"></i>
+                        </button>
+                        <p>Rewards</p>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- products listing area -->
+            <main>
+                <div>
+                    <p>Mobile games:</p>
+                    <div class="parent">
+                        <img src="https://i.redd.it/op52fca67y9c1.jpeg" alt="">
+                        <!-- <img src="../img/mlbb-normal.jpg" alt=""> -->
+                        <div>
+                            <p class="gameName">Mobile Legend Bang Bang</p>
+                            <p>Normal packages</p>
+                            <button>Buy now</button>
+                        </div>
+                    </div>
+
+                    <div class="parent">
+                        <img src="https://theevilstore.in/productImages/1730401157674--week1-(4).jpg" alt="">
+                        <!-- <img src="../img/weekly-pass.jpg" alt=""> -->
+                        <div>
+                            <p class="gameName">Weekly pass</p>
+                            <p>Special packages</p>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <button>Buy now</button>
+                        </div>
+                    </div>
+
+                    <div class="parent">
+                        <img src="https://theevilstore.in/productImages/1730401166311--week1-(3).jpg" alt="">
+                        <!-- <img src="../img/mlbb-small.jpg" alt=""> -->
+                        <div>
+                            <p class="gameName">Mobile Legend Mini</p>
+                            <p>Small packages</p>
+                            <button>Buy now</button>
+                        </div>
+                    </div>
+
+                    <div class="parent">
+                        <img src="https://p-my.ipricegroup.com/uploaded_18e1fd0180e899b8e8525ed80b5d28756520829d.png"
+                            alt="">
+                        <!-- <img src="../img/twilight.jpg" alt=""> -->
+                        <div>
+                            <p class="gameName">Twilight pass</p>
+                            <p>Special packages</p>
+                            <button>Buy now</button>
+                        </div>
+                    </div>
+
+                    <div class="parent">
+                        <img src="https://theevilstore.in/productImages/1730827894945--IMG_0141.jpeg" alt="">
+                        <!-- <img src="../img/bgmi.jpg" alt=""> -->
+                        <div>
+                            <p class="gameName">BGMI</p>
+                            <p>Top-up UC</p>
+                            <button>Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- bottom nav for mobile view -->
+        <nav class="nav">
+            <div>
+                <div>
+                    <button class="mBotBtn">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                    <p>Guide</p>
+                </div>
+                <div>
+                    <button class="mBotBtn">
+                        <i class="fa-solid fa-headset"></i>
+                    </button>
+                    <p>Support</p>
+                </div>
+                <div>
+                    <button class="mBotBtn active">
+                        <i class="fa-solid fa-house"></i>
+                    </button>
+                    <p>Home</p>
+                </div>
+                <div>
+                    <button class="mBotBtn">
+                        <i class="fa-solid fa-video"></i>
+                    </button>
+                    <p>Shorts</p>
+                </div>
+                <div>
+                    <button class="mBotBtn">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </button>
+                    <p>Account</p>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>
