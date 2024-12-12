@@ -1,0 +1,392 @@
+body {
+    position: relative;
+    width: 100dvw;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+button:hover, i:hover {
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* transaction page */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(to top, #004843d1, #004843ae);
+    backdrop-filter: blur(40px);
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > i {
+    margin-block: 0;
+    margin-inline: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.userIcon {
+    font-size: 2rem;
+}
+header > div > p {
+    margin-block: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+}
+header > div > p > span {
+    font-weight: 100;
+}
+
+
+
+.secondHeader {
+    background-color: #004843;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.secondHeader > div {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.balance {
+    width: calc(100% - 80px);
+    border-radius: 20px;
+    height: 130px;
+    background-color: #055C56;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.balance > p {
+    margin-block: 3px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+}
+.balance > p > span {
+    font-size: 1.5rem;
+}
+.balance~ div {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+}
+.balance~ div > p {
+    color: white;
+    font-size: 0.8rem;
+}
+
+
+.subNavBg {
+    background-color: white;
+    position: sticky;
+    top: 64px;
+    z-index: 1;
+}
+.subNavBg > div {
+    height: 50px;
+    width: 100%;
+    background-color: #004843;
+}
+.subNav {
+    margin: 0 auto;
+    max-width: 600px;
+}
+.subNav > div {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 20px;
+    position: relative;
+    top: -32px;
+}
+.subNav > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 54px;
+}
+.subNavBtn {
+    height: 64px;
+    width: 64px;
+    border-radius: 18px;
+    border: none;
+    color: #547218;
+    font-size: 1.25rem;
+    background-color: white;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s;
+}
+.active {
+    background-color: #00776F;
+    color: rgba(255, 255, 255, 0.92);
+}
+/* .subNavBtn:hover {
+    scale: 1.1;
+} */
+.subNav > div > div > p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+@media (max-width: 600px) {
+    .subNav > div {
+        margin-inline: 40px;
+    }
+}
+
+
+main {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+/* start of transactions */
+main > div {
+    margin-inline: 10px;
+    margin-bottom: 100px;
+}
+main > div > p {
+    margin: 5px 0 15px 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.parent {
+    background-color: white;
+    border: 1px solid #D9D9D9;
+    /* height: 70px; */
+    border-radius: 10px;
+    margin-block: 7px;
+    display: flex;
+    position: relative;
+}
+.parent > img {
+    aspect-ratio: 1/1;
+    border-radius: 4px;
+    margin: 11px;
+    height: 48px;
+}
+.parent > div {
+    margin-block: 10px;
+}
+.gameName {
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+.gameName~ p {
+    font-size: 0.75rem;
+    color: rgb(81, 81, 81);
+    font-weight: 100;
+    margin: 0;
+}
+.dr {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FF0000;
+    font-size: 0.9rem;
+}
+.cr {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #068203;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    .gameName {
+        font-size: 0.9rem;
+    }
+    .gameName~ p {
+        font-size: 0.7rem;
+    } 
+}
+/* end of transactions */
+
+/* start of top up */
+.topUpForm {
+    display: flex;
+    justify-content: center;
+}
+.topUpForm > div {
+    background: linear-gradient(to top, #D8EDFF, #F4FFFE);
+    border: 1px solid #00484336;
+    padding-block: 30px;
+    padding-inline: 12px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instantDeliveryBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    color: #055C56;
+    font-weight: bold;
+}
+.instantDeliveryBox > p {
+    font-size: 0.9rem;
+}
+.instantDeliveryBox > div {
+    background-color: #E0F8B1;
+    height: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.touUpBox, .paymentMethodBox {
+    /* background-color: red; */
+    font-size: 0.8rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+}
+.touUpBox > input {
+    /* border: 1px solid #055C56; */
+    border: none;
+    /* appearance: text; */
+    /* -moz-appearance: textfield; */
+    background-color: white;
+    height: 48px;
+    border-radius: 10px;
+    width: calc(100% - 40px);
+    padding-inline: 20px;
+}
+
+.paymentMethodBox > div {
+    background-color: white;
+    border-radius: 10px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 18px;
+    align-items: center;
+}
+.paymentMethodBox > div > img {
+    height: calc(100% - 30px);
+}
+.paymentMethodBox > div > input {
+    margin: 0;
+}
+
+.termsAndConditionBox {
+    margin-top: 24px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;  
+}
+.termsAndConditionBox > a {
+    color: #055C56;
+}
+
+
+
+.submitTopUpForm {
+    width: 100%;
+    max-width: 620px;
+    height: 54px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFA723;
+    border: none;
+    border-radius: 27px;
+    font-weight: bold;
+}
+@media (max-width: 640px) {
+    .submitTopUpForm {
+        width: calc(100% - 20px);
+    }
+}
+/* end of top up */
+
+
+/* start of purchases */
+.purchasedAmt {
+    color: black;
+    text-align: center;
+}
+/* .purchasedAmt > span {
+    color: #068203;
+} */
+.success {
+    color: #068203;
+}
+.failed {
+    color: #FF0000;
+}
+.pendingRefunded {
+    color: rgb(81, 81, 81);
+}
+.grandParent {
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    margin-block: 7px;
+}
+.mlbb {
+    background: linear-gradient(to top, rgb(147, 180, 80, 0.87), rgb(147, 180, 80, 0.26));
+}
+.mlbbMini {
+    background: linear-gradient(to top, rgb(208, 234, 255), rgb(232, 255, 253));
+}
+.weeklyPass {
+    background: linear-gradient(to top, rgb(154, 121, 225, 0.76), rgb(154, 121, 225, 0.34));
+}
+.twilight {
+    background: linear-gradient(to top, rgb(255, 117, 151, 0.66), rgb(255, 117, 151, 0.32));
+}
+.bgmi {
+    background: linear-gradient(to top, rgb(255, 184, 0, 0.60), rgb(255, 184, 0, 0.33));
+}
+.noBorder {
+    border: none;
+    margin-block: 0;
+    background-color: transparent;
+}
+.hideShow {
+    padding-bottom: 10px;
+}
+.hideShow > p {
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+.hideShow > p > span {
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .hideShow > p {
+        font-size: 0.8rem;
+    }
+}
+/* end of purchases */
