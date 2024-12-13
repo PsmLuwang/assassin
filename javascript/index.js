@@ -119,12 +119,12 @@ navLinkA.forEach((btn, index) => {
 const middleFourBtn = document.querySelectorAll(".subNavBtn");
 middleFourBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
-        middleFourBtn.forEach((element) => {
-            element.style.backgroundColor = 'white';
-            element.style.color = '#547218';
-        });
-        btn.style.backgroundColor = '#00776F';
-        btn.style.color = 'white';
+        // middleFourBtn.forEach((element) => {
+        //     element.style.backgroundColor = 'white';
+        //     element.style.color = '#547218';
+        // });
+        // btn.style.backgroundColor = '#00776F';
+        // btn.style.color = 'white';
         const value = btn.getAttribute('value');
         window.location.href=`shortcuts.html?value=${value}`;
     });
