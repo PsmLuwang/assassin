@@ -83,7 +83,7 @@ const shortcuts = {
             `;
         }
     },
-    purchases : function () {
+    orders : function () {
         // listing transactions
         let wrapper = document.getElementById('wrapper');
         wrapper.innerHTML = '<p>Recent purchases:</p>';
@@ -160,8 +160,8 @@ switch (value) {
         shortcuts.transaction();
         middleFourBtn[1].classList.add('active')
         break;
-        case 'purchases':
-        shortcuts.purchases();
+        case 'orders':
+        shortcuts.orders();
         middleFourBtn[2].classList.add('active')
         break;
         case 'rewards':

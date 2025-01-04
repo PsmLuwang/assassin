@@ -355,19 +355,19 @@ input[type=number] {
     margin-block: 7px;
 }
 .mlbb {
-    background: linear-gradient(to top, rgb(147, 180, 80, 0.87), rgb(147, 180, 80, 0.26));
+    background: linear-gradient(to top, rgba(147, 180, 80, 0.405), rgba(147, 180, 80, 0.154));
 }
 .mlbbMini {
-    background: linear-gradient(to top, rgb(208, 234, 255), rgb(232, 255, 253));
+    background: linear-gradient(to top, rgba(208, 234, 255, 0.442), rgba(232, 255, 253, 0.299));
 }
 .weeklyPass {
-    background: linear-gradient(to top, rgb(154, 121, 225, 0.76), rgb(154, 121, 225, 0.34));
+    background: linear-gradient(to top, rgba(154, 121, 225, 0.421), rgba(154, 121, 225, 0.199));
 }
 .twilight {
-    background: linear-gradient(to top, rgb(255, 117, 151, 0.66), rgb(255, 117, 151, 0.32));
+    background: linear-gradient(to top, rgba(255, 117, 152, 0.389), rgba(255, 117, 152, 0.184));
 }
 .bgmi {
-    background: linear-gradient(to top, rgb(255, 184, 0, 0.60), rgb(255, 184, 0, 0.33));
+    background: linear-gradient(to top, rgba(255, 183, 0, 0.294), rgba(255, 183, 0, 0.203));
 }
 .noBorder {
     border: none;
