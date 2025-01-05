@@ -400,13 +400,15 @@ input[type=number] {
     flex-wrap: wrap;
 }
 .container > div {
-    background-color: orange;
-    flex: 1 0 320px;
+    background-color: rgb(255, 188, 63);
+    flex: 1 0 300px;
     border-radius: 10px;
     padding-inline: 20px;
     display: flex;
     justify-content: space-between;
+    height: 100px;
 }
 .container p {
-    color: rgba(0, 0, 0, 0.631);
+    color: rgba(0, 0, 0, 0.565);
+    font-size: 0.8rem;
 }

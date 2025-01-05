@@ -144,17 +144,17 @@ const shortcuts = {
             <div class="container">
                 <div class="totalOrders">
                     <div>
-                        <h2>Total Orders</h2>
+                        <h3>Total Orders</h3>
                         <p>Overall purchases since the account creation</p>
                     </div>
-                    <h2>${purchases.length}</h2>
+                    <h3>${purchases.length}</h3>
                 </div>
                 <div class="totalSpent">
                     <div>
-                        <h2>Overall Spent</h2>
+                        <h3>Overall Spent</h3>
                         <p>Including UPI and Wallet payments</p>
                     </div>
-                    <h2>₹${overallSpent}</h2>
+                    <h3>₹${overallSpent}</h3>
                 </div>
             </div>
         `;
