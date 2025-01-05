@@ -86,7 +86,7 @@ const shortcuts = {
     orders : function () {
         // listing transactions
         let wrapper = document.getElementById('wrapper');
-        wrapper.innerHTML = '<p>Recent purchases:</p>';
+        wrapper.innerHTML = '<p>Recently purchases:</p>';
         for (let i = 0; i < purchases.length; i++) {
 
             let bgColor;
@@ -132,7 +132,35 @@ const shortcuts = {
             `;
         }
     },
-    rewards : ``,
+    dashboard : function() {
+        let wrapper = document.getElementById('wrapper');
+        let overallSpent = 0;
+        purchases.forEach(purchase => {
+            overallSpent += parseFloat(purchase.amount);
+        })
+        wrapper.innerHTML = `
+            <p>Dashboard:</p>
+
+            <div class="container">
+                <div class="totalOrders">
+                    <div>
+                        <h2>Total Orders</h2>
+                        <p>Overall purchases since the account creation</p>
+                    </div>
+                    <h2>${purchases.length}</h2>
+                </div>
+                <div class="totalSpent">
+                    <div>
+                        <h2>Overall Spent</h2>
+                        <p>Including UPI and Wallet payments</p>
+                    </div>
+                    <h2>₹${overallSpent}</h2>
+                </div>
+            </div>
+        `;
+
+
+    },
 }
 
 
@@ -164,8 +192,8 @@ switch (value) {
         shortcuts.orders();
         middleFourBtn[2].classList.add('active')
         break;
-        case 'rewards':
-        shortcuts.rewards();
+        case 'dashboard':
+        shortcuts.dashboard();
         middleFourBtn[3].classList.add('active')
         break;
     default:

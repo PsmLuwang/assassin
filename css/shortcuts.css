@@ -146,7 +146,7 @@ header > div > p > span {
 
 
 main {
-    max-width: 1800px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -390,3 +390,23 @@ input[type=number] {
     }
 }
 /* end of purchases */
+
+
+/* start of Dashboard */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container > div {
+    background-color: orange;
+    flex: 1 0 320px;
+    border-radius: 10px;
+    padding-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.container p {
+    color: rgba(0, 0, 0, 0.631);
+}
